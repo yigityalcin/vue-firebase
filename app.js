@@ -3,16 +3,15 @@ const app = Vue.createApp({
     // template: '<h2>I am the template</h2>'
     data() {
         return {
-            showBooks: false,
+            showBooks: true,
             title: 'The Final Empire',
             author: 'Jack Harlow',
             age: '45'
         }
     },
     methods: {
-        changeTitle() {
-            this.title = "Donusum"
-
+        toggleShowBooks() {
+            this.showBooks = !this.ShowBooks
         }
 
     }
